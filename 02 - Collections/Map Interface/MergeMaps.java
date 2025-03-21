@@ -10,7 +10,6 @@ public class MergeMaps {
         map2.put("B", 3);
         map2.put("C", 4);
 
-        // Merge map2 into map1
         for (Map.Entry<String, Integer> entry : map2.entrySet()) {
             map1.merge(entry.getKey(), entry.getValue(), Integer::sum);
         }
