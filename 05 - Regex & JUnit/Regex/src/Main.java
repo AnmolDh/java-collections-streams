@@ -29,6 +29,8 @@ public class Main {
 
 //        ExtractLanguageNames.extract("I love Java, Python, and JavaScript, but I haven't tried Go yet.");
 
-        ExtractCurrencyValues.extract("The price is $45.99, and the discount is 10.50.");
+//        ExtractCurrencyValues.extract("The price is $45.99, and the discount is 10.50.");
+
+        ExtractRepeatingWords.extract("This is is a repeated repeated word test.");
     }
 }
