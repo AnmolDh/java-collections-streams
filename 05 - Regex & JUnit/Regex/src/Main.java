@@ -25,6 +25,8 @@ public class Main {
 
 //        ValidateIPAddress.validate("102.221.121.0");
 
-        ValidateCreditCard.validate("51920120348910120");
+//        ValidateCreditCard.validate("51920120348910120");
+
+        ExtractLanguageNames.extract("I love Java, Python, and JavaScript, but I haven't tried Go yet.");
     }
 }
