@@ -1,4 +1,5 @@
 import regex_extractions.*;
+import regex_replace_modify.SpacesToSingleSpace;
 import regex_validations.*;
 
 public class Main {
@@ -15,6 +16,8 @@ public class Main {
 //
 //        ExtractDates.extract("The events are scheduled for 12/05/2023, 15/08/2024, and 29/02/2020.");
 
-        ExtractLinks.extract("Visit https://www.google.com and http://example.org for more info.");
+//        ExtractLinks.extract("Visit https://www.google.com and http://example.org for more info.");
+
+        SpacesToSingleSpace.replace("This  is an example  with multiple spaces.");
     }
 }
