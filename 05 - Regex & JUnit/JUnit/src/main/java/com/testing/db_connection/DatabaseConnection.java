@@ -17,4 +17,12 @@ public class DatabaseConnection {
         return connected;
     }
 
+    public boolean isConnectedDelayed(){
+        try{
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+        return connected;
+    }
 }
