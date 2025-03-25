@@ -1,6 +1,5 @@
 import regex_extractions.*;
-import regex_replace_modify.CensorBadWords;
-import regex_replace_modify.SpacesToSingleSpace;
+import regex_replace_modify.*;
 import regex_validations.*;
 
 public class Main {
@@ -31,6 +30,8 @@ public class Main {
 
 //        ExtractCurrencyValues.extract("The price is $45.99, and the discount is 10.50.");
 
-        ExtractRepeatingWords.extract("This is is a repeated repeated word test.");
+//        ExtractRepeatingWords.extract("This is is a repeated repeated word test.");
+
+        ValidateSocialSecurity.validate("My SSN is 123-45-6782");
     }
 }
