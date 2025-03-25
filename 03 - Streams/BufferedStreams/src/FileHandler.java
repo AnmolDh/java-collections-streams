@@ -39,7 +39,7 @@ public class FileHandler {
             }
             System.out.println("File copied successfully with buffering.");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 

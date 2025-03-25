@@ -21,6 +21,8 @@ public class Main {
 
 //        SpacesToSingleSpace.replace("This  is an example  with multiple spaces.");
 
-        CensorBadWords.replace("This is a damn bad example with some stupid words.");
+//        CensorBadWords.replace("This is a damn bad example with some stupid words.");
+
+        ValidateIPAddress.validate("102.221.121.0");
     }
 }
