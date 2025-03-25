@@ -27,6 +27,8 @@ public class Main {
 
 //        ValidateCreditCard.validate("51920120348910120");
 
-        ExtractLanguageNames.extract("I love Java, Python, and JavaScript, but I haven't tried Go yet.");
+//        ExtractLanguageNames.extract("I love Java, Python, and JavaScript, but I haven't tried Go yet.");
+
+        ExtractCurrencyValues.extract("The price is $45.99, and the discount is 10.50.");
     }
 }
