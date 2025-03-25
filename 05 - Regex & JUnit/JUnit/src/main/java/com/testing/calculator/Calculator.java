@@ -17,4 +17,8 @@ public class Calculator {
         if (b == 0) throw new ArithmeticException("Divide by zero");
         return a / b;
     }
+
+    public boolean isEven(int a) {
+        return a % 2 == 0;
+    }
 }

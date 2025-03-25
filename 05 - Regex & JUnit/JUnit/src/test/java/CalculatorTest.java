@@ -1,5 +1,8 @@
 import com.testing.calculator.Calculator;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
@@ -32,5 +35,11 @@ public class CalculatorTest {
     @Test
     void testDivideByZero() {
         assertThrows(ArithmeticException.class, () -> calc.divide(5, 0));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {2, 4, 10})
+    void testIsEven(int num) {
+        Assertions.assertTrue(calc.isEven(num));
     }
 }
