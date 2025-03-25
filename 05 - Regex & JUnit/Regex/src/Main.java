@@ -13,6 +13,6 @@ public class Main {
 
         ExtractCapitalizedWords.extract("The Eiffel Tower is in Paris and the Statue of Liberty is in New York.");
 
-//        ExtractDates.extract("The events are scheduled for 12/05/2023, 15/08/2024, and 29/02/2020.");
+        ExtractDates.extract("The events are scheduled for 12/05/2023, 15/08/2024, and 29/02/2020.");
     }
 }
