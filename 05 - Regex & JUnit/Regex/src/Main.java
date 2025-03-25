@@ -23,6 +23,8 @@ public class Main {
 
 //        CensorBadWords.replace("This is a damn bad example with some stupid words.");
 
-        ValidateIPAddress.validate("102.221.121.0");
+//        ValidateIPAddress.validate("102.221.121.0");
+
+        ValidateCreditCard.validate("51920120348910120");
     }
 }
