@@ -1,4 +1,5 @@
 import regex_extractions.*;
+import regex_replace_modify.CensorBadWords;
 import regex_replace_modify.SpacesToSingleSpace;
 import regex_validations.*;
 
@@ -18,6 +19,8 @@ public class Main {
 
 //        ExtractLinks.extract("Visit https://www.google.com and http://example.org for more info.");
 
-        SpacesToSingleSpace.replace("This  is an example  with multiple spaces.");
+//        SpacesToSingleSpace.replace("This  is an example  with multiple spaces.");
+
+        CensorBadWords.replace("This is a damn bad example with some stupid words.");
     }
 }
