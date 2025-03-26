@@ -1,3 +1,5 @@
+package com.testing;
+
 import com.testing.calculator.Calculator;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;

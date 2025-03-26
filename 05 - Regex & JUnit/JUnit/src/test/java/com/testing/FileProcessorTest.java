@@ -1,3 +1,5 @@
+package com.testing;
+
 import com.testing.file_handling.FileProcessor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,3 +1,5 @@
+package com.testing;
+
 import com.testing.string_utils.StringUtils;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
