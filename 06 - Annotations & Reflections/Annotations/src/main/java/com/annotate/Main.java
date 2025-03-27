@@ -1,5 +1,6 @@
 package com.annotate;
 
+import com.annotate.custom.taskinfo.TaskManager;
 import com.annotate.deprecated.LegacyAPI;
 import com.annotate.override.Dog;
 
@@ -12,6 +13,7 @@ public class Main {
 //        api.oldFeature();
 //        api.newMethod();
 
-
+        TaskManager taskManager = new TaskManager();
+        taskManager.getAnnotationDetails();
     }
 }
