@@ -1,6 +1,7 @@
 package com.annotate;
 
 import com.annotate.custom.bugreport.Report;
+import com.annotate.custom.cacheresult.ExpensiveMethods;
 import com.annotate.custom.importantmethod.Methods;
 import com.annotate.custom.jsonfield.JsonSerializer;
 import com.annotate.custom.jsonfield.JsonUser;
@@ -40,8 +41,11 @@ public class Main {
 //        UserForRole user = new UserForRole("idk", Role.ADMIN);
 //        RestrictedMethods.invokeAdminMethod(user);
 
-        JsonUser user = new JsonUser("Anmol", 21);
-        String jsonUser = JsonSerializer.toJson(user);
-        System.out.println(jsonUser);
+//        JsonUser user = new JsonUser("Anmol", 21);
+//        String jsonUser = JsonSerializer.toJson(user);
+//        System.out.println(jsonUser);
+
+        ExpensiveMethods.fibonacci(10);
+        ExpensiveMethods.fibonacci(10);
     }
 }
