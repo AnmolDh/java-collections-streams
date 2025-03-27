@@ -2,6 +2,8 @@ package com.annotate;
 
 import com.annotate.custom.bugreport.Report;
 import com.annotate.custom.importantmethod.Methods;
+import com.annotate.custom.jsonfield.JsonSerializer;
+import com.annotate.custom.jsonfield.JsonUser;
 import com.annotate.custom.logexecutiontime.Logger;
 import com.annotate.custom.maxlength.User;
 import com.annotate.custom.roleallowed.RestrictedMethods;
@@ -35,7 +37,11 @@ public class Main {
 
 //        User user = new User("Daneweweww");
 
-        UserForRole user = new UserForRole("idk", Role.ADMIN);
-        RestrictedMethods.invokeAdminMethod(user);
+//        UserForRole user = new UserForRole("idk", Role.ADMIN);
+//        RestrictedMethods.invokeAdminMethod(user);
+
+        JsonUser user = new JsonUser("Anmol", 21);
+        String jsonUser = JsonSerializer.toJson(user);
+        System.out.println(jsonUser);
     }
 }
