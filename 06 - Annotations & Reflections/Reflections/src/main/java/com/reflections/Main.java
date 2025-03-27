@@ -9,6 +9,7 @@ import com.reflections.dynamicallycreateobjects.Student;
 import com.reflections.dynamicmethodinvocation.DynamicMethodInvocation;
 import com.reflections.invokeprivate.Calculator;
 import com.reflections.invokeprivate.InvokePrivateMethods;
+import com.reflections.modifystaticfields.ModifyStaticFields;
 import com.reflections.retrieveannotations.RetrieveAnnotations;
 import com.reflections.retrieveannotations.SomeonesBook;
 
@@ -26,6 +27,8 @@ public class Main {
 
 //        DynamicMethodInvocation.invoke();
 
-        RetrieveAnnotations.retrieveAuthor(SomeonesBook.class);
+//        RetrieveAnnotations.retrieveAuthor(SomeonesBook.class);
+
+        ModifyStaticFields.modifyAPIKEY();
     }
 }
