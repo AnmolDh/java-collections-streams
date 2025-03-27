@@ -2,6 +2,7 @@ package com.annotate;
 
 import com.annotate.custom.bugreport.Report;
 import com.annotate.custom.importantmethod.Methods;
+import com.annotate.custom.logexecutiontime.Logger;
 import com.annotate.custom.taskinfo.TaskManager;
 import com.annotate.custom.todo.Task;
 import com.annotate.deprecated.LegacyAPI;
@@ -24,6 +25,8 @@ public class Main {
 
 //        Methods.getAnnotatedMethod();
 
-        Task.getTodoTasks();
+//        Task.getTodoTasks();
+
+        Logger.processLoggingTime();
     }
 }
