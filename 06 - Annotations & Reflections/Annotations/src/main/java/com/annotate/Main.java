@@ -4,6 +4,9 @@ import com.annotate.custom.bugreport.Report;
 import com.annotate.custom.importantmethod.Methods;
 import com.annotate.custom.logexecutiontime.Logger;
 import com.annotate.custom.maxlength.User;
+import com.annotate.custom.roleallowed.RestrictedMethods;
+import com.annotate.custom.roleallowed.Role;
+import com.annotate.custom.roleallowed.UserForRole;
 import com.annotate.custom.taskinfo.TaskManager;
 import com.annotate.custom.todo.Task;
 import com.annotate.deprecated.LegacyAPI;
@@ -30,6 +33,9 @@ public class Main {
 
 //        Logger.processLoggingTime();
 
-        User user = new User("Daneweweww");
+//        User user = new User("Daneweweww");
+
+        UserForRole user = new UserForRole("idk", Role.ADMIN);
+        RestrictedMethods.invokeAdminMethod(user);
     }
 }
