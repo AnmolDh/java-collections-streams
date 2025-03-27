@@ -1,6 +1,7 @@
 package com.annotate;
 
 import com.annotate.custom.bugreport.Report;
+import com.annotate.custom.importantmethod.Methods;
 import com.annotate.custom.taskinfo.TaskManager;
 import com.annotate.deprecated.LegacyAPI;
 import com.annotate.override.Dog;
@@ -16,8 +17,10 @@ public class Main {
 
 //        TaskManager taskManager = new TaskManager();
 //        taskManager.getAnnotationDetails();
+//
+//        Report report = new Report();
+//        report.printBugReport();
 
-        Report report = new Report();
-        report.printBugReport();
+        Methods.getAnnotatedMethod();
     }
 }
