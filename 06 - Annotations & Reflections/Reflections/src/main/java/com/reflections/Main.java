@@ -6,6 +6,7 @@ import com.reflections.classinfo.ClassInformation;
 import com.reflections.classinfo.SampleClass;
 import com.reflections.dynamicallycreateobjects.DynamicallyCreateObjects;
 import com.reflections.dynamicallycreateobjects.Student;
+import com.reflections.dynamicmethodinvocation.DynamicMethodInvocation;
 import com.reflections.invokeprivate.Calculator;
 import com.reflections.invokeprivate.InvokePrivateMethods;
 
@@ -18,7 +19,9 @@ public class Main {
 
 //        InvokePrivateMethods.invoke(new Calculator(), 10, 5);
 
-        Student student = (Student) DynamicallyCreateObjects.create(Student.class);
-        System.out.println(student.getName());
+//        Student student = (Student) DynamicallyCreateObjects.create(Student.class);
+//        System.out.println(student.getName());
+
+        DynamicMethodInvocation.invoke();
     }
 }
