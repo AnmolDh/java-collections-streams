@@ -4,6 +4,8 @@ import com.reflections.accessprivate.AccessPrivateField;
 import com.reflections.accessprivate.Person;
 import com.reflections.classinfo.ClassInformation;
 import com.reflections.classinfo.SampleClass;
+import com.reflections.dynamicallycreateobjects.DynamicallyCreateObjects;
+import com.reflections.dynamicallycreateobjects.Student;
 import com.reflections.invokeprivate.Calculator;
 import com.reflections.invokeprivate.InvokePrivateMethods;
 
@@ -14,6 +16,9 @@ public class Main {
 //        Person person = new Person("Anmol", 20);
 //        AccessPrivateField.modifyAge(person, 21);
 
-        InvokePrivateMethods.invoke(new Calculator(), 10, 5);
+//        InvokePrivateMethods.invoke(new Calculator(), 10, 5);
+
+        Student student = (Student) DynamicallyCreateObjects.create(Student.class);
+        System.out.println(student.getName());
     }
 }
