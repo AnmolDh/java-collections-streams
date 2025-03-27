@@ -1,5 +1,6 @@
 package com.annotate;
 
+import com.annotate.custom.bugreport.Report;
 import com.annotate.custom.taskinfo.TaskManager;
 import com.annotate.deprecated.LegacyAPI;
 import com.annotate.override.Dog;
@@ -13,7 +14,10 @@ public class Main {
 //        api.oldFeature();
 //        api.newMethod();
 
-        TaskManager taskManager = new TaskManager();
-        taskManager.getAnnotationDetails();
+//        TaskManager taskManager = new TaskManager();
+//        taskManager.getAnnotationDetails();
+
+        Report report = new Report();
+        report.printBugReport();
     }
 }
