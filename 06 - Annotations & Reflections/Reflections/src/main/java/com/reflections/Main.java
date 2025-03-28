@@ -4,6 +4,9 @@ import com.reflections.accessprivate.AccessPrivateField;
 import com.reflections.accessprivate.Person;
 import com.reflections.classinfo.ClassInformation;
 import com.reflections.classinfo.SampleClass;
+import com.reflections.customloggingproxy.DynamicProxy;
+import com.reflections.customloggingproxy.Greeting;
+import com.reflections.customloggingproxy.GreetingCls;
 import com.reflections.customobjectmapper.ObjectMapper;
 import com.reflections.customobjectmapper.SampleClassOM;
 import com.reflections.dynamicallycreateobjects.DynamicallyCreateObjects;
@@ -41,6 +44,10 @@ public class Main {
 //        properties.put("age", 22);
 //        SampleClassOM scom = (SampleClassOM) ObjectMapper.toObject(SampleClassOM.class, properties);
 //        System.out.println(scom);
+
+        Greeting greeting = new GreetingCls();
+        Greeting proxyGreeting = DynamicProxy.createProxy(greeting, Greeting.class);
+        proxyGreeting.sayHello();
 
     }
 }
