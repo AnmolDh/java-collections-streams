@@ -4,6 +4,8 @@ import com.reflections.accessprivate.AccessPrivateField;
 import com.reflections.accessprivate.Person;
 import com.reflections.classinfo.ClassInformation;
 import com.reflections.classinfo.SampleClass;
+import com.reflections.customobjectmapper.ObjectMapper;
+import com.reflections.customobjectmapper.SampleClassOM;
 import com.reflections.dynamicallycreateobjects.DynamicallyCreateObjects;
 import com.reflections.dynamicallycreateobjects.Student;
 import com.reflections.dynamicmethodinvocation.DynamicMethodInvocation;
@@ -12,6 +14,9 @@ import com.reflections.invokeprivate.InvokePrivateMethods;
 import com.reflections.modifystaticfields.ModifyStaticFields;
 import com.reflections.retrieveannotations.RetrieveAnnotations;
 import com.reflections.retrieveannotations.SomeonesBook;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,6 +34,13 @@ public class Main {
 
 //        RetrieveAnnotations.retrieveAuthor(SomeonesBook.class);
 
-        ModifyStaticFields.modifyAPIKEY();
+//        ModifyStaticFields.modifyAPIKEY();
+
+        Map<String, Object> properties = new HashMap<String, Object>();
+        properties.put("name", "John");
+        properties.put("age", 22);
+        SampleClassOM scom = (SampleClassOM) ObjectMapper.toObject(SampleClassOM.class, properties);
+        System.out.println(scom);
+
     }
 }
