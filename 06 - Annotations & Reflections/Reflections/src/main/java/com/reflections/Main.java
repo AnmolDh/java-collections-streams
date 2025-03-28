@@ -16,6 +16,8 @@ import com.reflections.dynamicallycreateobjects.Student;
 import com.reflections.dynamicmethodinvocation.DynamicMethodInvocation;
 import com.reflections.invokeprivate.Calculator;
 import com.reflections.invokeprivate.InvokePrivateMethods;
+import com.reflections.methodexecutiontiming.MethodExecutionTiming;
+import com.reflections.methodexecutiontiming.SampleME;
 import com.reflections.modifystaticfields.ModifyStaticFields;
 import com.reflections.retrieveannotations.RetrieveAnnotations;
 import com.reflections.retrieveannotations.SomeonesBook;
@@ -51,7 +53,9 @@ public class Main {
 //        Greeting proxyGreeting = DynamicProxy.createProxy(greeting, Greeting.class);
 //        proxyGreeting.sayHello();
 
-        SampleInject sampleInject = DIContainer.createInstanceDI(SampleInject.class);
-        sampleInject.getAPIDep();
+//        SampleInject sampleInject = DIContainer.createInstanceDI(SampleInject.class);
+//        sampleInject.getAPIDep();
+
+        MethodExecutionTiming.execute(SampleME.class);
     }
 }
