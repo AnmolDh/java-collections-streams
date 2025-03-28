@@ -9,6 +9,8 @@ import com.reflections.customloggingproxy.Greeting;
 import com.reflections.customloggingproxy.GreetingCls;
 import com.reflections.customobjectmapper.ObjectMapper;
 import com.reflections.customobjectmapper.SampleClassOM;
+import com.reflections.dependencyinjection.DIContainer;
+import com.reflections.dependencyinjection.SampleInject;
 import com.reflections.dynamicallycreateobjects.DynamicallyCreateObjects;
 import com.reflections.dynamicallycreateobjects.Student;
 import com.reflections.dynamicmethodinvocation.DynamicMethodInvocation;
@@ -45,9 +47,11 @@ public class Main {
 //        SampleClassOM scom = (SampleClassOM) ObjectMapper.toObject(SampleClassOM.class, properties);
 //        System.out.println(scom);
 
-        Greeting greeting = new GreetingCls();
-        Greeting proxyGreeting = DynamicProxy.createProxy(greeting, Greeting.class);
-        proxyGreeting.sayHello();
+//        Greeting greeting = new GreetingCls();
+//        Greeting proxyGreeting = DynamicProxy.createProxy(greeting, Greeting.class);
+//        proxyGreeting.sayHello();
 
+        SampleInject sampleInject = DIContainer.createInstanceDI(SampleInject.class);
+        sampleInject.getAPIDep();
     }
 }
