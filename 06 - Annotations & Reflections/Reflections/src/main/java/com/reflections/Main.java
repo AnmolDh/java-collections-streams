@@ -36,11 +36,11 @@ public class Main {
 
 //        ModifyStaticFields.modifyAPIKEY();
 
-        Map<String, Object> properties = new HashMap<String, Object>();
-        properties.put("name", "John");
-        properties.put("age", 22);
-        SampleClassOM scom = (SampleClassOM) ObjectMapper.toObject(SampleClassOM.class, properties);
-        System.out.println(scom);
+//        Map<String, Object> properties = new HashMap<String, Object>();
+//        properties.put("name", "John");
+//        properties.put("age", 22);
+//        SampleClassOM scom = (SampleClassOM) ObjectMapper.toObject(SampleClassOM.class, properties);
+//        System.out.println(scom);
 
     }
 }
